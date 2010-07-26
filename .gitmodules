@@ -1,0 +1,3 @@
+[submodule "playground/submodules/rapidsms"]
+	path = playground/submodules/rapidsms
+	url = git://github.com/rapidsms/rapidsms-core-dev.git

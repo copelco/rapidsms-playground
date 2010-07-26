@@ -6,4 +6,4 @@
 	url = git://github.com/caktus/rapidsms-twilio.git
 [submodule "playground/submodules/rclickatell"]
 	path = playground/submodules/rclickatell
-	url = git://github.com/caktus/rapidsms-clickatell.git
+	url = git@github.com:caktus/rapidsms-twilio.git

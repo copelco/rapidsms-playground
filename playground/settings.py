@@ -15,9 +15,21 @@ DATABASE_ENGINE = "sqlite3"
 DATABASE_NAME = "db.sqlite3"
 
 INSTALLED_APPS = (
+    "django.contrib.sessions",
+    "django.contrib.contenttypes",
+    "django.contrib.auth",
+    'django.contrib.humanize',
+    "rapidsms.contrib.djangoadmin",
+    "django.contrib.admin",
     "rapidsms",
+    "rtwilio",
 )
 
 TABS = [
     ('rapidsms.views.dashboard', 'Dashboard'),
 ]
+
+INSTALLED_BACKENDS = {
+    "twilio": {"ENGINE": "rtwilio.backend"},
+    "message_tester" : {"ENGINE": "rapidsms.backends.bucket" } 
+}

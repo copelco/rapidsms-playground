@@ -23,6 +23,8 @@ INSTALLED_APPS = (
     "django.contrib.admin",
     "rapidsms",
     "rtwilio",
+    "rapidsms.contrib.echo",
+    "rapidsms.contrib.default",
 )
 
 TABS = [

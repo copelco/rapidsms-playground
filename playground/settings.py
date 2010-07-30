@@ -22,9 +22,9 @@ INSTALLED_APPS = (
     "rapidsms.contrib.djangoadmin",
     "django.contrib.admin",
     "rapidsms",
-    "rtwilio",
+    "rapidsms.contrib.handlers",
     "rapidsms.contrib.echo",
-    "rapidsms.contrib.default",
+    "rtwilio",
 )
 
 TABS = [
@@ -35,3 +35,5 @@ INSTALLED_BACKENDS = {
     "twilio": {"ENGINE": "rtwilio.backend"},
     "message_tester" : {"ENGINE": "rapidsms.backends.bucket" } 
 }
+
+TEST_RUNNER = "django_nose.run_tests"

@@ -7,3 +7,6 @@
 [submodule "playground/submodules/rclickatell"]
 	path = playground/submodules/rclickatell
 	url = git://github.com/caktus/rapidsms-clickatell.git
+[submodule "playground/submodules/rerouter"]
+	path = playground/submodules/rerouter
+	url = git://github.com/caktus/rapidsms-rerouter.git

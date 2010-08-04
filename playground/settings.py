@@ -27,6 +27,7 @@ INSTALLED_APPS = (
     "rapidsms.contrib.ajax",
     "rtwilio",
     "rclickatell",
+    "rerouter",
 )
 
 TABS = [

@@ -44,5 +44,5 @@ INSTALLED_BACKENDS = {
 TEST_RUNNER = "django_nose.run_tests"
 
 REROUTE = {
-    'rtwilio': 'rclickatell',
+    'twilio': 'clickatell',
 }

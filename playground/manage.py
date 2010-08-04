@@ -36,7 +36,7 @@ if __name__ == "__main__":
     libs += [os.path.join(rapidsms, 'lib')]
     libs += [os.path.join(rapidsms, "submodules", "django-app-settings")]
     libs += [os.path.join(rapidsms, "submodules", "django-tables", "lib")]
-    packages = ['rtwilio', 'rclickatell']
+    packages = ['rtwilio', 'rclickatell', 'rerouter']
     for package in packages:
         sys.path.insert(0, os.path.join(submodules, package))
     for lib in libs:

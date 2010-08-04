@@ -24,15 +24,19 @@ INSTALLED_APPS = (
     "rapidsms",
     "rapidsms.contrib.handlers",
     "rapidsms.contrib.echo",
+    "rapidsms.contrib.ajax",
     "rtwilio",
+    "rclickatell",
 )
 
 TABS = [
     ('rapidsms.views.dashboard', 'Dashboard'),
+    ('rclickatell.views.test', 'Clickatell'),
 ]
 
 INSTALLED_BACKENDS = {
     "twilio": {"ENGINE": "rtwilio.backend"},
+    "clickatell": {"ENGINE": "rclickatell.backend"},
     "message_tester" : {"ENGINE": "rapidsms.backends.bucket" } 
 }
 

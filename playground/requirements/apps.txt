@@ -1,0 +1,6 @@
+django==1.2.1
+rapidsms
+twilio
+-e git+http://github.com/caktus/rapidsms-rerouter.git#egg=rerouter
+-e git+http://github.com/caktus/rapidsms-clickatell.git#egg=rclickatell
+-e git+http://github.com/caktus/rapidsms-twilio.git#egg=rtwilio

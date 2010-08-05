@@ -28,17 +28,7 @@ if __name__ == "__main__":
     sys.path.pop(0)
 
     project = os.path.abspath(os.path.dirname(__file__))
-    project_parent = os.path.dirname(project)
-    local_apps = os.path.join(project, "apps")
-    libs = [project_parent, local_apps]
-    submodules = os.path.join(project, "submodules")
-    rapidsms = os.path.join(project, "submodules", "rapidsms")
-    libs += [os.path.join(rapidsms, 'lib')]
-    libs += [os.path.join(rapidsms, "submodules", "django-app-settings")]
-    libs += [os.path.join(rapidsms, "submodules", "django-tables", "lib")]
-    packages = ['rtwilio', 'rclickatell', 'rerouter']
-    for package in packages:
-        sys.path.insert(0, os.path.join(submodules, package))
+    libs = [os.path.dirname(project), os.path.join(project, "apps")]
     for lib in libs:
         sys.path.insert(0, lib)
     settings = import_module('%s.settings' % PROJECT_NAME)
